@@ -58,7 +58,7 @@ def message_handler(message: types.Message):
         )
         return
 
-    # получаем номер тестовой карты выбранного типа
+    # получаем данные тестовой карты выбранного типа
     # card_type может принимать одно из зачений ['maestro', 'mastercard', 'visa13', 'visa16', 'visa19',
     # 'amex', 'discover', 'diners', 'jcb15', 'jcb16']
     card_number = faker.credit_card_full(card_type)
